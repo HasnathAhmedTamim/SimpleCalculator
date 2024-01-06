@@ -30,6 +30,33 @@ class Calculator {
     this.currentOperand = "";
   }
 
+  // compute() {
+  //   let computation;
+  //   const prev = parseFloat(this.previousOperand);
+  //   const current = parseFloat(this.currentOperand);
+
+  //   if (isNaN(prev) || isNaN(current)) return;
+  //   switch (this.operation) {
+  //     case "+":
+  //       computation = prev + current;
+  //       break;
+  //     case "-":
+  //       computation = prev - current;
+  //       break;
+  //     case "*":
+  //       computation = prev * current;
+  //       break;
+  //     case "÷":
+  //       computation = prev / current;
+  //       break;
+
+  //     default:
+  //       return;
+  //   }
+  //   this.currentOperand = computation;
+  //   this.operation = undefined;
+  //   this.previousOperand = "";
+  // }
   compute() {
     let computation;
     const prev = parseFloat(this.previousOperand);
@@ -53,7 +80,9 @@ class Calculator {
       default:
         return;
     }
-    this.currentOperand = computation;
+
+    // Convert the result to a string to handle decimal points correctly
+    this.currentOperand = computation.toString();
     this.operation = undefined;
     this.previousOperand = "";
   }
