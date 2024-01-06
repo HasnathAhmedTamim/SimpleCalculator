@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, rgb(0, 255, 106), hsl(215, 100%, 50%));
+
+}
+
+.calculator-grid {
+    min-height: 100vh;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid>button {
+
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.calculator-grid>button:hover {
+    background-color: rgba(255, 255, 255, .2);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .82);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .prev-op {
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+.output .cur-op {
+    color: whitesmoke;
+    font-size: 2.5rem;
+}
