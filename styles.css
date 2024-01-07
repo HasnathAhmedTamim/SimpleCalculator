@@ -25,6 +25,16 @@ body {
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
+.theme-class {
+    padding: 5px;
+    display: grid;
+    justify-content: center;
+    justify-content: center;
+    align-content: center;
+    
+
+}
+
 .calculator-grid>button {
 
     cursor: pointer;
@@ -45,7 +55,7 @@ body {
 .output {
 
     grid-column: 1/-1;
-    background-color: rgba(0, 0, 0, .82);
+    background-color: rgba(162, 45, 45, 0.82);
 
     display: flex;
     align-items: flex-end;
