@@ -26,12 +26,13 @@ body {
 }
 
 .theme-class {
+    width: auto;
     padding: 5px;
     display: grid;
-    justify-content: center;
-    justify-content: center;
-    align-content: center;
+    justify-content: right;
     
+    align-content: center;
+    background-color: rgb(183, 237, 237);
 
 }
 

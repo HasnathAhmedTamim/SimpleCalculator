@@ -200,9 +200,11 @@ select.addEventListener("change", (event) => {
       break;
     case "reload":
       update(window.location.reload());
+      
       break;
   }
 });
+
 function update(bgColor, textColor) {
   html.style.backgroundColor = bgColor;
   html.style.color = textColor;
